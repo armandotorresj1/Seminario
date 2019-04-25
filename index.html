@@ -1,14 +1,24 @@
+<head>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3plus/1.9.2/d3plus.full.min.js"></script>
+</head>
+
+
+
 <h1>SEMINARIO VISUALIZACIÓN DE DATOS </h1>
  <h2> Nombre: Armando Torres<br>
 URL: <a
 href "https://js-4pc7jk.stackblitz.io">https://js-4pc7jk.stackblitz.io <a><br><br>
-URL (github): <a
-href "https://github.com/armandotorresj1/Seminario">https://github.com/armandotorresj1/Seminario</a>
+URL Github: <a
+href "https://github.com/armandotorresj1/Seminario">https://github.com/armandotorresj1/Seminario</a><br><br>
+URL Fuente de base de datos: <a
+href : "www.oica.net/category/sales-statistics/">www.oica.net/category/sales-statistics/</a><br><br>
 
 <h1>Intoducción</h1>
   <h2>  
   La empresa automotriz MEXCARS está pensando en lanzar un nuevo automóvil para el mercado global. Es el primer automóvil de ésta empresa que se diseña y produce desde cero, por lo que el éxito de éste es crucial para la empresa. El auto ha sido diseñado en USA con éste mercado en mente y ya se cuenta con la aprobación para iniciar el proyecto.
-  El director de mercadotecnia no está de acuerdo con que se utilice el mercado de Estados Unidos como referencia para éste automóvil ya que desde hace unos años ya no es el mercado más importante del mundo. Éste director ha encargado su equipo que demuestren con datos su postura
+  El director de mercadotecnia no está de acuerdo con que se utilice el mercado de Estados Unidos como referencia para éste automóvil ya que desde hace unos años ya no es el mercado más importante del mundo. Éste director ha encargado su equipo que demuestren con datos su postura.
   </h2>
 
 <h1>Ventas de automóviles en los últimos años</h1>
@@ -17,25 +27,23 @@ href "https://github.com/armandotorresj1/Seminario">https://github.com/armandoto
   </h2>
   <iframe width="849" height="526" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTHhhIa6srN5bHwkImx-MszmTwwy-nMsYJvY-if5V6zK0Lxj11olYdRez4vN6flxurD57L2dPUluFjR/pubchart?oid=2013518345&amp;format=interactive"></iframe>
 
-  <h2>Justificación de Herramienta: Se ha optado por un gráfico de líneas ya que es recomendado para mostrar valores cualitativos durante un intervalo de tiempo, en éste caso número de ventas de autos de 2009 al 2017. Se ha cuidado el no usar demasiadas líneas, pero tampoco el eliminar las regiones con bajas ventas para no perder perspectiva</h2>
+  <h2>Justificación de Herramienta: Se ha optado por un gráfico de líneas ya que es recomendado para mostrar valores cualitativos durante un intervalo de tiempo, en éste caso número de ventas de autos de 2009 al 2017. Se ha cuidado el no usar demasiadas líneas, pero tampoco el eliminar las regiones con bajas ventas para no perder perspectiva.</h2>
 
   <h1>Países Top en venta de autos en la actualidad<h1>
-  <h2>En el siguiente mapa se muestra los países con mayores ventas de automóviles en el 2017 (coloque el cursor encima de cada país para obtener el detalle de ventas)</h2>
+  <h2>En el siguiente mapa se muestra los países con mayores ventas de automóviles en el 2017 (coloque el cursor encima de cada país para obtener el detalle de ventas).</h2>
 
 <script type='text/javascript' src='https://us-east-1.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1000px; height: 827px;'><object class='tableauViz' width='1000' height='827' style='display:none;'><param name='host_url' value='https%3A%2F%2Fus-east-1.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;bop' /><param name='name' value='VentasGlobales&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /><param name='filter' value='iframeSizedToWindow=true' /></object></div>
 
-  <h2>Justificación de Herramienta: Es importante mostrar las regiones más importantes actualmente e interactuar con el gráfico de ser necesario, por si algún miembro del comité de directores pregunta por algún país en específico<h2>
+  <h2>Justificación de Herramienta: Es importante mostrar las regiones más importantes actualmente e interactuar con el gráfico de ser necesario, por si algún miembro del comité de directores pregunta por algún país en específico.<h2>
 
-  <h2>Si revisamos más de cerca el mercado asiático podemos encontrar que en el Top 15 de países con mayor venta en el mundo, 7 países pertenecen al mercado asiático<h2>
+  <h2>Si revisamos más de cerca el mercado asiático podemos encontrar que en el Top 15 de países con mayor venta en el mundo, 7 países pertenecen al mercado asiático.<h2>
 
-<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTHhhIa6srN5bHwkImx-MszmTwwy-nMsYJvY-if5V6zK0Lxj11olYdRez4vN6flxurD57L2dPUluFjR/pubchart?oid=1595778225&amp;format=interactive"></iframe>
+<h2> Ventas por pais (Millones)</h2>
+<div id="viz5"></div>
 
-  <h2>Justificación de Herramienta: Aunque el mapa ya nos da una idea de las regiones importantes, un gráfico de barras horizontal nos ayudará a mostrar las diferencias entre los países. Se ha cuidado el uso de colores para que esté coordinado con el mapa<h2>
+  <h2>Justificación de Herramienta: Aunque el mapa ya nos da una idea de las regiones importantes, un gráfico de barras nos ayudará a mostrar las diferencias entre los países en persepectiva, ordenado de mayor a menor para facilitar su compración.<h2>
 
 
 <h1>Conclusiones</h1>
-  <h2> Es claro que la decisión de enfocarse en los mercados americano y europeo fue basada en información obsoleta. Después de ver la información, la compañía MEXCARS ha decidido hacer grupos foco en China, Japón y la India para conocer mejor al cliente y así asegurar el éxito Global del éste vehículo
+  <h2> Es claro que la decisión de enfocarse en los mercados americano y europeo fue basada en información obsoleta. Después de ver la información, la compañía MEXCARS ha decidido hacer grupos foco en China, Japón y la India para conocer mejor al cliente y así asegurar el éxito Global del éste vehículo.
     <h2>
-
-
-Fuente de los datos: www.oica.net/category/sales-statistics/
