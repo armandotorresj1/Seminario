@@ -1,20 +1,5 @@
-//Import stylesheets
-import './style.css';
-
-//Gráfico de Barras. Mi 1º grafico
-var visualization = d3plus.viz()
- .container("#viz1")
- .data([{"year": 1991, "name":"alpha", "value": 15},
-  {"year": 1992, "name":"alpha", "value": 20},])
- .type("bar")
- .id("name")
- .x("year")
- .y("value")
- .draw()
-
-
  var visualization = d3plus.viz()
-  .container("#viz5")
+  .container("#viz1")
   .data([{"Pais": "01 CHINA", "name":"CHINA", "Ventas Millones": 25},
   {"Pais": "02 USA", "name":"USA", "Ventas Millones": 6.1},
   {"Pais": "03 JAPAN", "name":"JAPAN", "Ventas Millones": 4.3},
